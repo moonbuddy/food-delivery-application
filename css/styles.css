@@ -1,3 +1,9 @@
-*{
-    margin: 0;
-}
+html
+    {
+        box-sizing: border-box;
+    }
+
+body
+    {
+        background-color: #F09C3A;
+    }
