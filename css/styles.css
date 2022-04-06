@@ -53,3 +53,72 @@ body{
 .rowHeight {
     height: min-content;
 }
+
+/* Tsion CSS */
+.cover{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    background: #bdce22; 
+}
+
+.variety .card{
+    border: 0;
+    padding: 0 30px;
+    margin-bottom: 60px;
+    position: relative;
+    background: transparent;
+}
+.variety .card-img{
+    width: calc(100% + 60px);
+    margin-left:-30px;
+    overflow: hidden;
+    z-index: 9;
+    border-radius: 0;
+}
+.variety .card-img img{
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.variety .card-body{
+    z-index: 10; 
+      background: #bcff04a6; 
+     /* background: hsla(52, 100%, 51%, 0.651); */
+     background: hsla(32, 100%, 51%, 0.651);
+    border-top:4px solid #151514; 
+    padding: 15px;
+    box-shadow: 0px 2px 15px rgba(5, 241, 37, 0.5);
+    margin-top: -60px;
+    transition: 0.3s;
+    height: 20%; 
+ }
+.variety .card-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.variety .card-title a{
+    color: #000;
+    transition: 0.3s;
+}
+.variety .card-text{
+    color: #000;
+}
+.card-price {
+   font-weight: bold; 
+}
+.add-to-cart{
+ font-weight: bold;   
+}
+
+.variety .card:hover img{
+    transform: scale(1.1);
+}
+.variety .card:hover .card-body{
+    /* border-color: #fdc134; */
+  border-color:  #d68324
+}
+.variety .card:hover  .card-body .card-title a{ 
+    /* color: #854101; */
+    color: #F09C3A
+}
