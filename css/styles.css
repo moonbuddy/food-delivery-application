@@ -1,0 +1,32 @@
+body {
+    background-color: #F09C3A;
+}
+.box {
+    background-color: #C4C4C4;
+    height: 550px;
+    width: 350px;
+    border: 40px solid #F5F1E4;
+    padding: 50px;
+    margin: -250px    760px;
+    position:absolute;
+    top: 50%;
+    bottom: 50%;
+
+}
+h1{
+position: fixed;
+margin-left: 750px;
+top: 10vh;
+color: #F5F1E4;
+}
+@media only screen and (max-width: 991px) {
+}
+h2{
+        
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+h3{
+    background-color: none;
+}
