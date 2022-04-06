@@ -1,12 +1,20 @@
-html
-    {
-        box-sizing: border-box;
-    }
+/* Chris's CSS */
+.box1 {
+    background-color: #C4C4C4;
+    border: 40px solid #F5F1E4;
+    padding: 70px;
+}
+.paymentH1{
+    color: #F5F1E4;
+}
 
-body
-    {
-        background-color: #F09C3A;
-    }
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F09C3A;
+}
 
 /* Misael's CSS */
 .parallax {
@@ -37,6 +45,7 @@ body
 .img-thumbnail {
     border: none !important;
 }
+
 .imgSize {
     max-width: 50px !important;
 }
@@ -45,15 +54,12 @@ body
     height: min-content;
 }
 
-
-
-       /* Tsion CSS */
-        .cover{
+/* Tsion CSS */
+.cover{
     position: relative;
     z-index: 0;
     width: 100%;
-    background: #bdce22;
-    
+    background: #bdce22; 
 }
 
 .variety .card{
@@ -115,4 +121,4 @@ body
 .variety .card:hover  .card-body .card-title a{ 
     /* color: #854101; */
     color: #F09C3A
- } 
+}
