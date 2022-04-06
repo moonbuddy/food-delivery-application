@@ -8,3 +8,41 @@ body
         background-color: #F09C3A;
     }
 
+/* Misael's CSS */
+.parallax {
+    /* Set a specific height */
+    min-height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.imgHero {
+    /* The image used */
+    background-image: url("../media/pexels-koolshooters-6977378.jpg");
+}
+
+#heroText {
+    margin-top: 15vh;
+}
+
+.box {
+    background-color: #F09C3A;
+    width: 25px;
+}
+
+.img-thumbnail {
+    border: none !important;
+}
+
+.imgSize {
+    max-width: 50px !important;
+}
+
+.rowHeight {
+    height: min-content;
+}
+
