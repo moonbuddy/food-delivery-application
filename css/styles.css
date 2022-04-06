@@ -1,41 +1,20 @@
 /* Chris's CSS */
-.paymentBody {
-    background-color: #F09C3A;
-}
-.box {
+.box1 {
     background-color: #C4C4C4;
-    height: 550px;
-    width: 350px;
     border: 40px solid #F5F1E4;
-    padding: 50px;
-    margin: -250px    760px;
-    position:absolute;
-    top: 50%;
-    bottom: 50%;
-
+    padding: 70px;
 }
 .paymentH1{
-position: fixed;
-margin-left: 750px;
-top: 10vh;
-color: #F5F1E4;
+    color: #F5F1E4;
 }
 
-.paymentH2{
-        
-    position: absolute;
-    top: 0px;
-    right: 10px;
+html{
+    box-sizing: border-box;
 }
-html
-    {
-        box-sizing: border-box;
-    }
 
-body
-    {
-        background-color: #F09C3A;
-    }
+body{
+    background-color: #F09C3A;
+}
 
 /* Misael's CSS */
 .parallax {
