@@ -1,3 +1,102 @@
+
+
+*
+    {
+        background-color: #F09C3A;
+    }
+/* Yadi Section */
+    .section-1 {
+        padding: 10vmin 10vmin;
+      }
+       .pizza img{
+          position: relative;
+          height: 500px;
+          width: 500px;
+          z-index: 2;
+          /* min-width: 40vw;
+          max-width: 40vw; */
+          box-shadow: 10px 25px 42px rgba(0, 0, 0, 0.3);
+      }
+      
+      
+     .panel {
+        position: relative;
+        top: 4vmin;
+        left: -10vw;
+        width: 700px;
+        height: 420px;
+        /* min-height: 30vw; */
+        margin-left: 1%;
+        background: #F5F1E4;
+        border-radius: 3px;
+        text-align: center;
+        padding: 3vmin 5vmin 20vmin 10vmin;
+        box-shadow: 10px 25px 42px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        
+      }
+      
+      .panel h1 {
+        font-weight: bold;
+        padding: 0.4em 0;
+        font-size: 2em;
+        background: #F5F1E4;
+        /* margin-left: 40vw; */
+      }
+
+      
+    .panel p {
+        font-size: 1em;
+        color: rgba(0, 0, 0, 0.5);
+        background: #F5F1E4;
+      }
+
+
+ /*middle section  */
+
+
+       .burger img{
+        position: relative;
+        left: 90vmin;
+        height: 500px;
+        width: 500px;
+        z-index: 2;
+        /* min-width: 40vw;
+        max-width: 40vw; */
+        box-shadow: 10px 25px 42px rgba(0, 0, 0, 0.3);
+    }
+
+    .panel-2 p {
+      font-size: 1em;
+      color: rgba(0, 0, 0, 0.5);
+      background: #F5F1E4;
+    }
+
+    .panel-2 h1 {
+      font-weight: bold;
+      padding: 0.4em 0;
+      font-size: 2em;
+      background: #F5F1E4;
+      /* margin-left: 40vw; */
+    }
+
+    .panel-2 {
+      position: relative;
+      top: 4vmin;
+      left: -80vmin;
+      width: 700px;
+      height: 420px;
+      /* min-height: 30vw; */
+      margin-left: 1%;
+      background: #F5F1E4;
+      border-radius: 3px;
+      text-align: center;
+      padding: 3vmin 5vmin 20vmin 10vmin;
+      box-shadow: 10px 25px 42px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+      
+    }
+
 /* Chris's CSS */
 .box1 {
     background-color: #C4C4C4;
@@ -123,3 +222,4 @@ body{
     /* color: #854101; */
     color: #F09C3A
 }
+
