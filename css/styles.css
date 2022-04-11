@@ -1,8 +1,10 @@
 
+
 *
     {
         background-color: #F09C3A;
     }
+/* Yadi Section */
     .section-1 {
         padding: 10vmin 10vmin;
       }
@@ -94,3 +96,130 @@
       z-index: 1;
       
     }
+
+/* Chris's CSS */
+.box1 {
+    background-color: #C4C4C4;
+    border: 40px solid #F5F1E4;
+    padding: 70px;
+}
+.paymentH1{
+    color: #F5F1E4;
+    font-size: 58px;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F09C3A;
+}
+
+/* Misael's CSS */
+.parallax {
+    /* Set a specific height */
+    min-height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.imgHero {
+    /* The image used */
+    background-image: url("../media/pexels-koolshooters-6977378.jpg");
+}
+
+#heroText {
+    margin-top: 15vh;
+}
+
+.box {
+    background-color: #F09C3A;
+    width: 25px;
+}
+
+.img-thumbnail {
+    border: none !important;
+}
+
+.imgSize {
+    max-width: 50px !important;
+}
+
+.rowHeight {
+    height: min-content;
+}
+
+/* Tsion CSS */
+.cover{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    background: #bdce22; 
+}
+
+.variety .card{
+    border: 0;
+    padding: 0 30px;
+    margin-bottom: 60px;
+    position: relative;
+    background: transparent;
+}
+.variety .card-img{
+    width: calc(100% + 60px);
+    margin-left:-30px;
+    overflow: hidden;
+    z-index: 9;
+    border-radius: 0;
+}
+.variety .card-img img{
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.variety .card-body{
+    z-index: 10; 
+      background: #bcff04a6; 
+     /* background: hsla(52, 100%, 51%, 0.651); */
+     background: hsla(32, 100%, 51%, 0.651);
+    border-top:4px solid #151514; 
+    padding: 15px;
+    box-shadow: 0px 2px 15px rgba(5, 241, 37, 0.5);
+    margin-top: -60px;
+    transition: 0.3s;
+    height: 20%; 
+ }
+.variety .card-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.variety .card-title a{
+    color: #000;
+    transition: 0.3s;
+}
+.variety .card-text{
+    color: #000;
+}
+.card-price {
+   font-weight: bold; 
+}
+.add-to-cart{
+ font-weight: bold;   
+}
+
+.variety .card:hover img{
+    transform: scale(1.1);
+}
+.variety .card:hover .card-body{
+    /* border-color: #fdc134; */
+  border-color:  #d68324
+}
+.variety .card:hover  .card-body .card-title a{ 
+    /* color: #854101; */
+    color: #F09C3A
+}
+
