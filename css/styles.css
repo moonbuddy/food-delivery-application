@@ -1,9 +1,6 @@
-
-
-*
-    {
-        background-color: #F09C3A;
-    }
+body, .section-1{
+    background-color: #F09C3A;
+}
 /* Yadi Section */
     .section-1 {
         padding: 10vmin 10vmin;
