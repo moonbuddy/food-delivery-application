@@ -1,8 +1,8 @@
-body, .section-1{
+body, .section-1, .section-2{
     background-color: #F09C3A;
 }
 /* Yadi Section */
-    .section-1 {
+    .section-1, .section-2{
         padding: 10vmin 10vmin;
       }
        .pizza img{
@@ -12,7 +12,7 @@ body, .section-1{
           z-index: 2;
           /* min-width: 40vw;
           max-width: 40vw; */
-          box-shadow: 10px 25px 42px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 40px 45px 22px rgba(0, 0, 0, 0.3);
       }
       
       
@@ -22,13 +22,12 @@ body, .section-1{
         left: -10vw;
         width: 700px;
         height: 420px;
-        /* min-height: 30vw; */
         margin-left: 1%;
         background: #F5F1E4;
         border-radius: 3px;
         text-align: center;
         padding: 3vmin 5vmin 20vmin 10vmin;
-        box-shadow: 10px 25px 42px rgba(0, 0, 0, 0.3);
+        box-shadow: 10px 40px 45px 10px rgba(0, 0, 0, 0.3);
         z-index: 1;
         
       }
@@ -38,7 +37,6 @@ body, .section-1{
         padding: 0.4em 0;
         font-size: 2em;
         background: #F5F1E4;
-        /* margin-left: 40vw; */
       }
 
       
@@ -49,18 +47,13 @@ body, .section-1{
       }
 
 
- /*middle section  */
+ /*picture on right rows  */
 
 
        .burger img{
-        position: relative;
-        left: 90vmin;
         height: 500px;
         width: 500px;
-        z-index: 2;
-        /* min-width: 40vw;
-        max-width: 40vw; */
-        box-shadow: 10px 25px 42px rgba(0, 0, 0, 0.3);
+        box-shadow: 20px 40px 45px 20px rgba(0, 0, 0, 0.3);
     }
 
     .panel-2 p {
@@ -74,24 +67,17 @@ body, .section-1{
       padding: 0.4em 0;
       font-size: 2em;
       background: #F5F1E4;
-      /* margin-left: 40vw; */
     }
 
     .panel-2 {
-      position: relative;
-      top: 4vmin;
-      left: -80vmin;
       width: 700px;
       height: 420px;
-      /* min-height: 30vw; */
-      margin-left: 1%;
+      margin-top: 7%;
       background: #F5F1E4;
       border-radius: 3px;
       text-align: center;
-      padding: 3vmin 5vmin 20vmin 10vmin;
-      box-shadow: 10px 25px 42px rgba(0, 0, 0, 0.3);
-      z-index: 1;
-      
+      padding: 3vmin 14vmin 5vmin 5vmin;     
+      box-shadow: 10px 40px 45px 10px rgba(0, 0, 0, 0.3);
     }
 
 /* Chris's CSS */
