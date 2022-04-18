@@ -1,97 +1,29 @@
-body, .section-1{
-    background-color: #F09C3A;
+body {
+    background-color: #F09C3A !important;
 }
-/* Yadi Section */
-    .section-1 {
-        padding: 10vmin 10vmin;
-      }
-       .pizza img{
-          position: relative;
-          height: 500px;
-          width: 500px;
-          z-index: 2;
-          /* min-width: 40vw;
-          max-width: 40vw; */
-          box-shadow: 10px 25px 42px rgba(0, 0, 0, 0.3);
-      }
-      
-      
-     .panel {
-        position: relative;
-        top: 4vmin;
-        left: -10vw;
-        width: 700px;
-        height: 420px;
-        /* min-height: 30vw; */
-        margin-left: 1%;
-        background: #F5F1E4;
-        border-radius: 3px;
-        text-align: center;
-        padding: 3vmin 5vmin 20vmin 10vmin;
-        box-shadow: 10px 25px 42px rgba(0, 0, 0, 0.3);
-        z-index: 1;
-        
-      }
-      
-      .panel h1 {
-        font-weight: bold;
-        padding: 0.4em 0;
-        font-size: 2em;
-        background: #F5F1E4;
-        /* margin-left: 40vw; */
-      }
-
-      
-    .panel p {
-        font-size: 1em;
-        color: rgba(0, 0, 0, 0.5);
-        background: #F5F1E4;
-      }
-
-
- /*middle section  */
-
-
-       .burger img{
-        position: relative;
-        left: 90vmin;
+   /* Yadi Section */
+    .restaurant-section {
+        padding: 10vmin 10vmin 0vmin 0vmin;
+    }
+    .restaurant-section-2{
+        padding: 10vmin 10vmin ;
+        padding-bottom: 10vmin;
+    }
+    .restaurant-pic img{
         height: 500px;
-        width: 500px;
-        z-index: 2;
-        /* min-width: 40vw;
-        max-width: 40vw; */
-        box-shadow: 10px 25px 42px rgba(0, 0, 0, 0.3);
+        width: 530px;
+        box-shadow: 10px 40px 45px 22px rgba(0, 0, 0, 0.3);
     }
-
-    .panel-2 p {
-      font-size: 1em;
-      color: rgba(0, 0, 0, 0.5);
-      background: #F5F1E4;
-    }
-
-    .panel-2 h1 {
-      font-weight: bold;
-      padding: 0.4em 0;
-      font-size: 2em;
-      background: #F5F1E4;
-      /* margin-left: 40vw; */
-    }
-
-    .panel-2 {
-      position: relative;
-      top: 4vmin;
-      left: -80vmin;
-      width: 700px;
-      height: 420px;
-      /* min-height: 30vw; */
-      margin-left: 1%;
-      background: #F5F1E4;
-      border-radius: 3px;
-      text-align: center;
-      padding: 3vmin 5vmin 20vmin 10vmin;
-      box-shadow: 10px 25px 42px rgba(0, 0, 0, 0.3);
-      z-index: 1;
+    
       
+      
+    .label {
+        width: 530px;
+        height: 320px;
+        background: #f1e5be;
+        border-radius: 50px;
+        text-align: center;
+        box-shadow: 10px 40px 45px 10px rgba(0, 0, 0, 0.3);
     }
 
 /* Chris's CSS */
@@ -114,6 +46,9 @@ body{
 }
 
 /* Misael's CSS */
+.food-option{
+     background-color: #fffffd;   
+}
 .parallax {
     /* Set a specific height */
     min-height: 1000px;
@@ -155,8 +90,7 @@ body{
 .cover{
     position: relative;
     z-index: 0;
-    width: 100%;
-    background: #bdce22; 
+    width: 100%; 
 }
 
 .variety .card{
@@ -179,12 +113,12 @@ body{
 }
 .variety .card-body{
     z-index: 10; 
-      background: #bcff04a6; 
+      background: #0b0e02a6; 
      /* background: hsla(52, 100%, 51%, 0.651); */
-     background: hsla(32, 100%, 51%, 0.651);
+     background:#f1e5be;
     border-top:4px solid #151514; 
     padding: 15px;
-    box-shadow: 0px 2px 15px rgba(5, 241, 37, 0.5);
+    box-shadow: 0px 2px 15px rgba(11, 11, 4, 0.5);
     margin-top: -60px;
     transition: 0.3s;
     height: 20%; 
