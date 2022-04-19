@@ -233,4 +233,7 @@ function closePopUp() {
     localStorage.clear();
     onLoad();
     addToCart();
+    document.getElementById("Subtotal").innerHTML = "$0.00";
+    document.getElementById("TaxTotal").innerHTML = "$0.00";
+    document.getElementById("Total").innerHTML = "$0.00";
 }
