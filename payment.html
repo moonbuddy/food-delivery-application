@@ -16,7 +16,16 @@
     <!-- JavaScript -->
     <script src="/js/main.js" defer></script>
 </head>   
-<body> 
+<body>
+    <div class="payment-popup" id="paymentPopUp">
+        <div class="confirmationPopUp" id="popUpConfirmation">
+            <div class="popUpContainer">
+                <h2>Payment Accepted!</h2>
+                <p class="my-5">Your order has been confirmed and it's T minus 30 minutes until Nom Nom Time! Thank you for your order!</p>
+                <button type="button" class="btn btn-dark cancel" onclick="closePopUp()">Close</button>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid">
         <div class="d-flex justify-content-between rowHeight">
             <div class="pt-2"><a href="/index.html"><img src="/media/logo.png" alt="" class="imgSize" id="homeLogo"></a></div>
@@ -58,11 +67,13 @@
                     <h6 class="subtotal text-end"> SubTotal: $<span id = "Subtotal">0.00</span></h6>
                     <h6 class="TaxTotal text-end"> Tax: $<span id ="TaxTotal">0.00</span></h6>
                     <h6 class="Total text-end"> Total: $<span id ="Total">0.00 </span></h6>
+                    <div class="row" id="paymentSubmit">
+                        <button type="button" class="btn btn-dark my-3" onclick="openPopUp()">Submit Order</button>
+                    </div>
                 </div>
             </div>
         </div> 
     </div>
-   
     <!-- ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
