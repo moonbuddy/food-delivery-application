@@ -77,15 +77,20 @@ function onLoad(){
 }
 
 
-function cartNumber(menuList) {
+function cartNumber(menuList, action) {
     //pulls from storage and stores it in variable
     let counter = localStorage.getItem("counter");
-
     //turns the string to a number
     counter = Number(counter);
     
-    //if value exists then cart is updated
-    if(counter){
+    let menuItems = localStorage.getItem("menuInCart");
+    menuItems = JSON.parse(menuItems);
+
+    if(action == "decrease"){
+        localStorage.setItem("counter", counter - 1);
+        document.getElementById("cartNumber").innerHTML = counter - 1;
+    }
+    else if(counter){ //if value exists then cart is updated
         localStorage.setItem("counter", counter + 1);
         document.getElementById("cartNumber").innerHTML = counter + 1;
     } //otherwise it initializes the storage for counter
@@ -129,14 +134,25 @@ function addToStorage(menuList) {
     localStorage.setItem("menuInCart", JSON.stringify(cartItems));
 }
 
-function menuTotal(menuList){
+function menuTotal(menuList, action){
     //pulls from storage items that were stored if any
     let subTotalCost = localStorage.getItem("subTotalCost");
     let taxCost = localStorage.getItem("taxCost");
     let totalCost = localStorage.getItem("totalCost");
 
+    if(action == "decrease"){
+        subTotalCost = Number(subTotalCost);
+        localStorage.setItem("subTotalCost", subTotalCost - menuList.price);
+    
+        let taxes = ((subTotalCost - menuList.price)*tax).toFixed(2);
+        taxes = Number(taxes);
+        localStorage.setItem("taxCost", taxes);
+
+        let total = (subTotalCost - menuList.price) + taxes;
+        localStorage.setItem("totalCost", total.toFixed(2));
+    }
     //check to see if subtotal has a value already
-    if(subTotalCost != null){
+    else if(subTotalCost != null){
         //turns the string into a number
         subTotalCost = Number(subTotalCost);
         taxCost = Number(taxCost);
@@ -224,6 +240,7 @@ function addToCart() {
     }
     //adds functionality to the remove buttons
     removeFromCart();
+    manageAmount();
 }
 
 
@@ -295,6 +312,45 @@ function removeFromCart() {
             //refreshes the cart and icon
             onLoad();
             addToCart();
+        })
+    }
+}
+
+//change quantity of indiviudal menu items
+function manageAmount(){
+    let decreasebutton = document.querySelectorAll(".decrease");
+    let increasebutton = document.querySelectorAll(".increase");
+    let currentQuantity = 0;
+    let currentMenuItem = "";
+    let menuItems = localStorage.getItem("menuInCart");
+    menuItems = JSON.parse(menuItems);
+
+    for(let i = 0; i < decreasebutton.length; i++){
+        decreasebutton[i].addEventListener("click", () => {
+            currentQuantity = decreasebutton[i].parentElement.querySelector("h6").textContent;
+            currentMenuItem = decreasebutton[i].parentElement.previousElementSibling.previousElementSibling.previousElementSibling.querySelector("h6").textContent;
+            
+            if(menuItems[currentMenuItem].quanitity > 1){
+                menuItems[currentMenuItem].quanitity -= 1;
+                cartNumber(menuItems[currentMenuItem], "decrease");
+                menuTotal(menuItems[currentMenuItem], "decrease");
+                localStorage.setItem("menuInCart", JSON.stringify(menuItems));
+                addToCart();
+            }
+        })
+    }
+
+    for(let i = 0; i < increasebutton.length; i++){
+        increasebutton[i].addEventListener("click", () => {
+            currentQuantity = increasebutton[i].parentElement.querySelector("h6").textContent;
+            currentMenuItem = increasebutton[i].parentElement.previousElementSibling.previousElementSibling.previousElementSibling.querySelector("h6").textContent;
+            
+            menuItems[currentMenuItem].quanitity += 1;
+            cartNumber(menuItems[currentMenuItem]);
+            menuTotal(menuItems[currentMenuItem]);
+            localStorage.setItem("menuInCart", JSON.stringify(menuItems));
+            addToCart();
+            
         })
     }
 }
