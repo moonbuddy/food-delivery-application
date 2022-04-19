@@ -187,8 +187,10 @@ function addToCart() {
                 <div class="col">
                     <div class="position-relative">
                         <img src = "${item.img}" class = "img-thumbnail">
-                        <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger" id="deleteItem">x</span>
-                        <h6>${item.name}</h6>
+                        <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger deleteItem">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </span>
+                        <h6 id="name">${item.name}</h6>
                     </div>
                 </div>
                 <div class="col">
@@ -214,6 +216,14 @@ function addToCart() {
         document.getElementById("Total").innerHTML = totalCost;
         document.getElementById("paymentSubmit").style.display = "flex";
     }
+    else{ //executes when storage is empty
+        document.getElementById("Subtotal").innerHTML = "0.00";
+        document.getElementById("TaxTotal").innerHTML = "0.00";
+        document.getElementById("Total").innerHTML = "0.00";
+        document.getElementById("paymentSubmit").style.display = "none";
+    }
+    //adds functionality to the remove buttons
+    removeFromCart();
 }
 
 
@@ -233,7 +243,58 @@ function closePopUp() {
     localStorage.clear();
     onLoad();
     addToCart();
-    document.getElementById("Subtotal").innerHTML = "$0.00";
-    document.getElementById("TaxTotal").innerHTML = "$0.00";
-    document.getElementById("Total").innerHTML = "$0.00";
+    document.getElementById("Subtotal").innerHTML = "0.00";
+    document.getElementById("TaxTotal").innerHTML = "0.00";
+    document.getElementById("Total").innerHTML = "0.00";
+}
+
+function removeFromCart() {
+    //selects all the remove buttons
+    let deleteMenuItem = document.querySelectorAll(".deleteItem");
+    let menuName;
+    let menuCount = localStorage.getItem("counter");
+    let menuItems = localStorage.getItem("menuInCart");
+    menuItems = JSON.parse(menuItems);
+
+    let subTotalCost = localStorage.getItem("subTotalCost");
+    let taxCost = localStorage.getItem("taxCost");
+    let totalCost = localStorage.getItem("totalCost");
+    //converts string to number
+    subTotalCost = Number(subTotalCost);
+    taxCost = Number(taxCost);
+    totalCost = Number(totalCost);
+
+    for(let i=0; i < deleteMenuItem.length; i++){
+        deleteMenuItem[i].addEventListener("click", () => {
+            //selects the name of the item with the associated button clicked
+            menuName = deleteMenuItem[i].parentElement.textContent.trim();
+            
+            localStorage.setItem('counter', menuCount - menuItems[menuName].quanitity);
+
+            //subtract the menu item from subtotal
+            subTotalCost = subTotalCost - (menuItems[menuName].price * menuItems[menuName].quanitity)
+            localStorage.setItem('subTotalCost', subTotalCost.toFixed(2));
+
+            //calculates new tax
+            taxCost = subTotalCost*tax;
+            localStorage.setItem("taxCost", taxCost.toFixed(2));
+
+            //new total
+            totalCost = subTotalCost + taxCost;
+            localStorage.setItem("totalCost", totalCost.toFixed(2));
+
+            //updates the storage with menu item deleted
+            delete menuItems[menuName];
+            localStorage.setItem('menuInCart', JSON.stringify(menuItems));
+            
+            //clears storage if no items in cart
+            if(Object.keys(menuItems).length === 0){
+                localStorage.clear();
+            }
+
+            //refreshes the cart and icon
+            onLoad();
+            addToCart();
+        })
+    }
 }
