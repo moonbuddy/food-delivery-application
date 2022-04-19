@@ -70,6 +70,9 @@ function onLoad(){
     //if value exists then cart is updated
     if(counter){
         document.getElementById("cartNumber").innerHTML = counter;
+    }//no value then reset cart to zero
+    else{
+        document.getElementById("cartNumber").innerHTML = 0;
     }
 }
 
@@ -132,7 +135,9 @@ function menuTotal(menuList){
     let taxCost = localStorage.getItem("taxCost");
     let totalCost = localStorage.getItem("totalCost");
 
+    //check to see if subtotal has a value already
     if(subTotalCost != null){
+        //turns the string into a number
         subTotalCost = Number(subTotalCost);
         taxCost = Number(taxCost);
         totalCost = Number(totalCost);
@@ -168,10 +173,12 @@ function addToCart() {
     cartItems = JSON.parse(cartItems);
 
     let cart = document.querySelector(".cart")
+
+    //makes sure the html is empty
+    cart.innerHTML = "";
+
     //check for both the html element and if the object has items
     if(cartItems && cart){
-        //makes sure the html is empty
-        cart.innerHTML = "";
         //goes through the object kinda like a for loop
         Object.values(cartItems).map(item => {
             //adds the following code to the html using template literals
@@ -222,4 +229,8 @@ function openPopUp() {
 function closePopUp() {
     document.getElementById("popUpConfirmation").style.display = "none";
     document.getElementById("paymentPopUp").style.display = "none";
+    //clears local storage and updates the cart and cart icon to display as such
+    localStorage.clear();
+    onLoad();
+    addToCart();
 }
