@@ -205,6 +205,7 @@ function addToCart() {
         document.getElementById("Subtotal").innerHTML = subTotalCost;
         document.getElementById("TaxTotal").innerHTML = taxCost;
         document.getElementById("Total").innerHTML = totalCost;
+        document.getElementById("paymentSubmit").style.display = "flex";
     }
 }
 
@@ -212,3 +213,13 @@ function addToCart() {
 //runs the function on load of page
 onLoad();
 addToCart();
+
+function openPopUp() {
+    document.getElementById("paymentPopUp").style.display = "flex";
+    document.getElementById("popUpConfirmation").style.display = "flex";
+}
+
+function closePopUp() {
+    document.getElementById("popUpConfirmation").style.display = "none";
+    document.getElementById("paymentPopUp").style.display = "none";
+}

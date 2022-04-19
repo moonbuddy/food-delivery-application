@@ -156,3 +156,33 @@ body{
     color: #F09C3A
 }
 
+/* Moon */
+.payment-popup {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.confirmationPopUp {
+    display: none;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0%, 150%);
+}
+
+.popUpContainer {
+    width: 900px;
+    height: 250px;
+    padding: 20px;
+    background-color: #FFF;
+    border: 3px solid black;
+}
+
+#paymentSubmit {
+    display: none;
+}
