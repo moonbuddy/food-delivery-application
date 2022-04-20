@@ -72,9 +72,12 @@ text-decoration: none;
     /* The image used */
     background-image: url("../media/pexels-koolshooters-6977378.jpg");
 }
+.container-fluid-hero{
+    margin-top: -80px;
+}
 
 #heroText {
-    margin-top:vh;
+    margin-top:10vh;
     margin-left: 15vw;
 }
 

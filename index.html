@@ -20,17 +20,18 @@
 </head>
 <body>
     <!-- Parallax Hero Image -->
-    <div class="container-fluid">
+    <div class="container-fluid d-flex justify-content-between rowHeight sticky-top ms-1 me-1">
+      <div class="pt-2"><a href="/index.html"><img src="/media/logo.png" alt="" class="imgSize" id="homeLogo"></a></div>
+        <div class="pt-2 text-end">
+          <a href="/payment.html" class="position-relative me-2">
+            <img src="/media/cart.png" alt="" class="imgSize" id="checkout">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartNumber">0</span>
+          </a>
+        </div>
+    </div>
+    <div class="container-fluid-hero">
         <div class="row parallax imgHero d-flex align-content-start">
-            <div class="d-flex justify-content-between rowHeight">
-                <div class="pt-2"><a href="/index.html"><img src="/media/logo.png" alt="" class="imgSize" id="homeLogo"></a></div>
-                <div class="pt-2 text-end">
-                  <a href="/payment.html" class="position-relative">
-                    <img src="/media/cart.png" alt="" class="imgSize" id="checkout">
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartNumber">0</span>
-                  </a>
-                </div>
-            </div>
+            
             <div class = "mb-5 text-center col-md-8 mx-auto d-flex justify-content-evenly">
                 <p></p>
                 <h1 class = "display-3 fw-bold text-light" id="heroText">NOM NOM <br> TIME!</h1>
