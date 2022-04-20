@@ -11,16 +11,17 @@ body {
     }
     .restaurant-pic img{
         height: 500px;
-        width: 530px;
+        width: 540px;
         box-shadow: 10px 40px 45px 22px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
     }
     
-      
-      
     .label {
         width: 530px;
         background: #f1e5be;
-        border-radius: 50px;
+        border-radius: 40px;
         text-align: center;
         box-shadow: 10px 40px 45px 10px rgba(0, 0, 0, 0.3);
     }
@@ -65,7 +66,8 @@ body{
 }
 
 #heroText {
-    margin-top: 15vh;
+    margin-top:vh;
+    margin-left: 15vw;
 }
 
 .box {
@@ -86,6 +88,11 @@ body{
 }
 
 /* Tsion CSS */
+h2{
+    color: white; 
+    font-size: 40px;  
+    font-family: ;
+}
 .cover{
     position: relative;
     z-index: 0;
@@ -98,27 +105,35 @@ body{
     margin-bottom: 60px;
     position: relative;
     background: transparent;
+    border-radius: 10px;
 }
 .variety .card-img{
-    width: calc(100% + 60px);
+    width: calc(100% + 50px);
+    height: 50vh;
     margin-left:-30px;
     overflow: hidden;
     z-index: 9;
-    border-radius: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    object-position: 10%, 10%;
 }
+.card-img:hover{
+    transition: transform 500ms ease-in-out 25ms;
+}
+
 .variety .card-img img{
-    max-width: 100%;
+    /* width: 100%; */
     transition: all 0.3s ease-in-out;
+    /* object-fit: contain; */
 }
 .card-img{
     box-shadow: 0px 2px 15px rgba(11, 11, 4, 0.5);
 }
 .variety .card-body{
     z-index: 10; 
-      background: #0b0e02a6; 
-     /* background: hsla(52, 100%, 51%, 0.651); */
-     background:#f1e5be;
-    border-top:4px solid #151514; 
+    background:#f1e5be;
+    border-radius: 10px;
     padding: 15px;
     box-shadow: 0px 2px 15px rgba(11, 11, 4, 0.5);
     margin-top: -60px;
@@ -148,11 +163,9 @@ body{
     transform: scale(1.1);
 }
 .variety .card:hover .card-body{
-    /* border-color: #fdc134; */
   border-color:  #d68324
 }
 .variety .card:hover  .card-body .card-title a{ 
-    /* color: #854101; */
     color: #F09C3A
 }
 
