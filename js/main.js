@@ -323,7 +323,7 @@ function menuTotal(menuList, action){
         taxCost = Number(taxCost);
         totalCost = Number(totalCost);
 
-        localStorage.setItem("subTotalCost", subTotalCost + menuList.price);
+        localStorage.setItem("subTotalCost", (subTotalCost + menuList.price).toFixed(2));
 
         let taxes = ((subTotalCost + menuList.price)*tax).toFixed(2);
         taxes = Number(taxes);
@@ -378,7 +378,7 @@ function addToCart() {
                     <h6>${item.restaurant}</h6>
                 </div>
                 <div class="col">
-                    <h6>${item.price}</h6>
+                    <h6>${item.price.toFixed(2)}</h6>
                 </div>
                 <div class="col d-flex">
                     <ion-icon class = "decrease" name="caret-back-circle-outline"></ion-icon>
@@ -386,7 +386,7 @@ function addToCart() {
                     <ion-icon class = "increase" name="caret-forward-circle-outline"></ion-icon>
                 </div>
                 <div class="col">
-                    <h6>${item.price * item.quanitity}</h6>
+                    <h6>${(item.price * item.quanitity).toFixed(2)}</h6>
                 </div>
             </div>
             `

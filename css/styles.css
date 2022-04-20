@@ -48,6 +48,14 @@ body{
 /* Misael's CSS */
 .food-option{
      background-color: #fffffd;   
+    
+}
+.food-option a{
+color: #000;
+text-decoration: none;
+}
+.food-option a:hover{
+    color: #F09C3A;
 }
 .parallax {
     /* Set a specific height */
