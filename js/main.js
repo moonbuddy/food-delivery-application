@@ -1,55 +1,207 @@
 let menuLists = [
+    // Bits & Bytes
     {
-        name: "Burger",
-        img: "media/g-1.jpg",
+        name: "Lox Bytes",
+        img: "media/bits-1.jpg",
         restaurant: "Bits and Bytes",
-        price: 10,
+        price: 8.10,
         quanitity: 0,
         total: 0
     },
     {
-        name: "Sandwich",
-        img: "media/g-2.jpg",
+        name: "Potato Wedges",
+        img: "media/bits-2.jpg",
         restaurant: "Bits and Bytes",
-        price: 8,
+        price: 6.20,
         quanitity: 0,
         total: 0
     },
     {
-        name: "Spaghetti",
-        img: "media/g-5.jpg",
+        name: "Sushi Platter",
+        img: "media/bits-3.jpg",
         restaurant: "Bits and Bytes",
-        price: 12,
+        price: 40.70,
         quanitity: 0,
         total: 0
     },
     {
         name: "Taco",
-        img: "media/g-3.jpg",
+        img: "media/bits-6.jpg",
         restaurant: "Bits and Bytes",
-        price: 4.5,
+        price: 4.50,
         quanitity: 0,
         total: 0
     },
     {
-        name: "Egg Sandwich",
-        img: "media/g-6.jpg",
+        name: "Guac & Chip",
+        img: "media/bits-4.jpg",
         restaurant: "Bits and Bytes",
-        price: 9,
+        price: 9.99,
         quanitity: 0,
         total: 0
     },
     {
-        name: "Curry Dish",
-        img: "media/g-4.jpg",
+        name: "Mr Shrimp",
+        img: "media/bits-5.jpg",
         restaurant: "Bits and Bytes",
-        price: 14,
+        price: 13.99,
+        quanitity: 0,
+        total: 0
+    },
+    // Fully Stacked Subs
+    {
+        name: "B.L.T",
+        img: "media/sub-1.jpg",
+        restaurant: "Fully Stacked Subs",
+        price: 12.50,
+        quanitity: 0,
+        total: 0
+    },
+    {
+        name: "Pastrami Melt",
+        img: "media/sub-2.jpg",
+        restaurant: "Fully Stacked Subs",
+        price: 15.40,
+        quanitity: 0,
+        total: 0
+    },
+    {
+        name: "Chicken Fajita",
+        img: "media/sub-3.jpg",
+        restaurant: "Fully Stacked Subs",
+        price: 12.99,
+        quanitity: 0,
+        total: 0
+    },
+    {
+        name: "Panini",
+        img: "media/sub-4.jpg",
+        restaurant: "Fully Stacked Subs",
+        price: 9.99,
+        quanitity: 0,
+        total: 0
+    },
+    {
+        name: "Plant Based Chic' Sando",
+        img: "media/sub-5.jpg",
+        restaurant: "Fully Stacked Subs",
+        price: 15.75,
+        quanitity: 0,
+        total: 0
+    },
+    {
+        name: "Italian Combo",
+        img: "media/sub-6.jpg",
+        restaurant: "Fully Stacked Subs",
+        price: 12.50,
+        quanitity: 0,
+        total: 0
+    },
+    // Me'n Eddies
+    {
+        name: "Cheesy Pie",
+        img: "media/pizza-1.jpg",
+        restaurant: "Me'n Eddies",
+        price: 10.00,
+        quanitity: 0,
+        total: 0
+    },
+    {
+        name: "Tomato Flat Bread",
+        img: "media/pizza-2.jpg",
+        restaurant: "Me'n Eddies",
+        price: 12.99,
+        quanitity: 0,
+        total: 0
+    },
+    {
+        name: "Egg Combo",
+        img: "media/pizza-7.jpg",
+        restaurant: "Me'n Eddies",
+        price: 8.50,
+        quanitity: 0,
+        total: 0
+    },
+    {
+        name: "Shrimp Aroo",
+        img: "media/pizza-4.jpg",
+        restaurant: "Me'n Eddies",
+        price: 18.75,
+        quanitity: 0,
+        total: 0
+    },
+    {
+        name: "Veggie Delight",
+        img: "media/pizza-5.jpg",
+        restaurant: "Me'n Eddies",
+        price: 11.10,
+        quanitity: 0,
+        total: 0
+    },
+    {
+        name: "BBQ Chicken",
+        img: "media/pizza-6.jpg",
+        restaurant: "Me'n Eddies",
+        price: 15.50,
+        quanitity: 0,
+        total: 0
+    },
+    // Phó 68
+    {
+        name: "Ginger Rice Balls",
+        img: "media/pho-1.jpg",
+        restaurant: "Phó 68",
+        price: 7.20,
+        quanitity: 0,
+        total: 0
+    },
+    {
+        name: "Tofu Noodles",
+        img: "media/pho-2.jpg",
+        restaurant: "Phó 68",
+        price: 9.35,
+        quanitity: 0,
+        total: 0
+    },
+    {
+        name: "Beef Phó",
+        img: "media/pho-3.jpg",
+        restaurant: "Phó 68",
+        price: 12.45,
+        quanitity: 0,
+        total: 0
+    },
+    {
+        name: "Meatball Phó",
+        img: "media/pho-9jpg.jpg",
+        restaurant: "Phó 68",
+        price: 12.45,
+        quanitity: 0,
+        total: 0
+    },
+    {
+        name: "Shrimp Phó",
+        img: "media/pho-5.jpg",
+        restaurant: "Phó 68",
+        price: 13.75,
+        quanitity: 0,
+        total: 0
+    },
+    {
+        name: "Spring Roll",
+        img: "media/pho-7.jpg",
+        restaurant: "Phó 68",
+        price: 7.15,
         quanitity: 0,
         total: 0
     },
 ]
 
 const tax = 0.095;
+let path = window.location.pathname;
+let page = path.split("/").pop();
+console.log(page);
+
 
 //selects all buttons of menu items based on class
 let menus = document.querySelectorAll(".add-to-cart");
